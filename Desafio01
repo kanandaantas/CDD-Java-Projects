@@ -1,0 +1,62 @@
+package desafio01;
+import java.util.Scanner;
+
+public class exercicio01 {
+
+	public static void main(String[] args) {
+		 int cont = 0;
+		 Scanner entrada = new Scanner(System.in);
+	     
+		 System.out.println("Investigação");
+		 
+	     System.out.println("Telefonou para a vítima?");
+	     String duv1 = entrada.next();
+	     char perg1 = duv1.charAt(0);
+	     if (perg1 == 'S' || perg1 == 's')
+	    	 cont = cont + 1;
+	     else
+		    	cont = cont;
+	     
+	     System.out.println("Esteve no local do crime?");
+	     String duv2 = entrada.next();
+	     char perg2 = duv2.charAt(0);
+	     if (perg2 == 'S' || perg2 == 's')
+		    	cont = cont + 1;
+	     else
+		    	cont = cont;
+	     
+	     System.out.println("Mora perto da vítima?");
+	     String duv3 = entrada.next();
+	     char perg3 = duv3.charAt(0);
+	     if (perg3 == 'S' || perg3 == 's')
+		    	cont = cont + 1;
+	     else
+		    	cont = cont;
+	     
+	     System.out.println("Devia para a vítima?");
+	     String duv4 = entrada.next();
+	     char perg4 = duv4.charAt(0);
+	     if (perg4 == 'S' || perg4 == 's')
+		    	cont = cont + 1;
+	     else
+		    	cont = cont;
+	     
+	     System.out.println("Já trabalhou com a vítima?");
+	     String duv5 = entrada.next();
+	     char perg5 = duv5.charAt(0);
+	     if (perg5 == 'S' || perg5 == 's')
+		    	cont = cont + 1;
+	     else
+		    	cont = cont;
+	    
+	    if (cont == 2)
+	    	System.out.println("Suspeito(a)");
+	    else if (cont > 2 && cont < 5)
+	    	System.out.println("Cúmplice");
+	    else if (cont == 5)
+	    	System.out.println("Assassino(a)");
+	    else
+	    	System.out.println("Inocente");
+	}
+
+}
