@@ -1,3 +1,5 @@
+// Um programa que calcule a soma dos múltiplos de 3 e 5, no intervalo entre 1 e 20. No final, mostre a soma dos múltiplos de 3 a 5 e a soma total.
+
 package repeticoes02;
 
 public class exercicio05 {
