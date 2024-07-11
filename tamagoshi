@@ -1,0 +1,91 @@
+package JavaPOO;
+
+public class ClassePessoa {
+		String nome;
+		String acao = "";
+		
+	public void comer() {
+		if (acao.equals("")) {
+			acao = "comendo";
+			System.out.printf("%s está %s\n", nome, acao);
+		}
+		else {
+			if (acao.equals("dormindo")) {
+				System.out.printf("%s está %s, não pode comer\n", nome, acao);
+			}
+			else if (acao.equals("andando")) {
+				System.out.printf("%s está %s, não pode comer\n", nome, acao);
+			}
+			else {
+				System.out.printf("%s já está %s\n", nome, acao);
+			}	
+		}
+	}
+	
+	public void parardeComer() {
+		if (acao.equals("comendo")) {
+			System.out.printf("%s parou de comer\n", nome);
+			acao = "";
+		}
+		else {
+			System.out.printf("%s não está comendo\n", nome);
+		}
+	}
+		
+	public void andar() {
+		if (acao.equals("")) {
+			acao = "andando";
+			System.out.printf("%s está %s\n", nome, acao);
+		}
+		else {
+			if (acao.equals("dormindo")) {
+				System.out.printf("%s está %s, não pode andar\n", nome, acao);
+			}
+			else if (acao.equals("comendo")) {
+				System.out.printf("%s está %s, não pode andar\n", nome, acao);
+			}
+			else {
+				System.out.printf("%s já está %s\n", nome, acao);
+			}	
+		}
+	}
+	
+	public void parardeAndar() {
+		if (acao.equals("andando")) {
+			System.out.printf("%s parou de andar\n", nome);
+			acao = "";
+		}
+		else {
+			System.out.printf("%s não está andando\n", nome);
+		}
+	}
+	
+	public void dormir() {
+		if (acao.equals("")) {
+			acao = "dormindo";
+			System.out.printf("%s está %s\n", nome, acao);
+		}
+		else {
+			if (acao.equals("andando")) {
+				System.out.printf("%s está %s, não pode dormir\n", nome, acao);
+			}
+			else if (acao.equals("comendo")) {
+				System.out.printf("%s está %s, não pode dormir\n", nome, acao);
+			}
+			else {
+				System.out.printf("%s já está %s\n", nome, acao);
+			}	
+		}
+	}
+	
+	public void parardeDormir() {
+		if (acao.equals("dormindo")) {
+			System.out.printf("%s parou de dormir\n", nome);
+			acao = "";
+		}
+		else {
+			System.out.printf("%s não está andando\n", nome);
+		}
+	}
+	
+}
