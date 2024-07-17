@@ -1,0 +1,32 @@
+package JavaPOO;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+        CalcularMetodos calculadora = new CalcularMetodos();
+
+        int resultado1 = calculadora.somar(7, 11);
+        System.out.println(resultado1);
+        
+        int resultado2 = calculadora.soma(8, 6, 4);
+        System.out.println(resultado2);
+        
+        int resultado3 = calculadora.subtrair(28, 10);
+        System.out.println(resultado3);
+        
+        int resultado4 = calculadora.subtracao(30, 1, 11);
+        System.out.println(resultado4);
+        
+        int resultado5 = calculadora.multiplicar(6, 3);
+        System.out.println(resultado5);
+        
+        int resultado6 = calculadora.multiplicacao(3, 2, 3);
+        System.out.println(resultado6);
+        
+        int resultado7 = calculadora.dividir(36, 2);
+        System.out.println(resultado7);
+        
+        int resultado8 = calculadora.divisao(72, 2, 2);
+        System.out.println(resultado8);
+	}
+}
